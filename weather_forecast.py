@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     if weather_info:
         df = pd.DataFrame([weather_info])
-        csv_file_path = './weather_data.csv'
+        csv_file_path = '../weather_data.csv'
 
         if not os.path.isfile(csv_file_path):
             df.to_csv(csv_file_path, index=False)
